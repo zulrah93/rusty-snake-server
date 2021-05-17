@@ -51,6 +51,4 @@ impl HtmlBuilder {
         self.result_html += format!("<p>{}</a>", text).as_str();
         self
     }
-
-    
 }
