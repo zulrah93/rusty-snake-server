@@ -13,11 +13,12 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v2
+    - with:
+          rust-version: stable
     - name: Build
-      with:
-        rust-version: nightly
       run: cargo build --verbose
     - name: Run tests
       run: cargo test --verbose
